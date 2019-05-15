@@ -23,6 +23,7 @@
 #include "Graphics.h"
 #include "PubeScreenTransformer.h"
 #include "Cube.h"
+#include "Triangle.h"
 
 class Game
 {
@@ -44,5 +45,6 @@ private:
 	/*  User Variables              */
 	PubeScreenTransformer pst;
 	Cube cube;
+	Triangle triangle;
 	/********************************/
 };

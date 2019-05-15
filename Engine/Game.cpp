@@ -25,7 +25,8 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	cube( 1.0f )
+	cube( 1.0f ),
+	triangle(1.0f)
 {
 }
 
@@ -43,7 +44,9 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
-	auto lines = cube.GetLines();
+	//auto lines = cube.GetLines();
+	auto lines = triangle.GetLines();
+
 	for( auto& v : lines.vertices )
 	{
 		v += { 0.0f,0.0f,1.0f };
